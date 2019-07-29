@@ -9,13 +9,24 @@
   <title>Document</title>
 </head>
 <body>
-  
-  <textarea type="text" style="width: 78em; height: 20em;"></textarea>
-  <!----button type="submit" onclick="encriptar(this)">Codifica</button-->
-  <button class="btn btn-primary" type="submit" onclick="desencriptar(this)">Decodifica</button>
 
-  <textarea type="text" style="width: 78em; height: 20em;" id="resultado"></textarea>
-  
+  <div class="container">
+    <section class="main row">
+      <div class="row">
+        <div class="col-sm-6">
+          <textarea type="text" style="width: 70em; height: 20em; margin-top:1em"></textarea>
+          <!----button type="submit" onclick="encriptar(this)">Codifica</button-->
+          <button class="btn btn-secondary btn-lg btn-block" Style="margin-bottom:1em" type="submit" onclick="desencriptar(this)">Decodifica</button>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-sm-6">
+          <textarea type="text" style="width: 70em; height: 20em;margin-bottom:1em" id="resultado"></textarea>
+        </div>
+      </div>
+    </section>
+  </div>
   
 
   <script src="app.js"></script>
