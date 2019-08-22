@@ -1,12 +1,26 @@
-function encriptar(elemento){
-    let palabra = document.getElementsByTagName("textarea")[0].value;
-    //let palabraCodificada = encodeURIComponent(palabra);
-    document.getElementById('resultado').innerHTML = palabraCodificada;
-  }
+function desencriptar(e){
+  let word =  document.getElementsByTagName('textarea')[0].value;
+  let decodeWord = decodeURIComponent(word.split("\\%\\$\\|\\&\\."));
+
+  // document.write(decodeWord + "<br>" + "<br>");
+  // let expReg = 'space';
+  let word2 = decodeWord.split(['|']);
+  console.log(decodeWord.split(['|']));
   
-  function desencriptar(elemento){
-    let palabra =  document.getElementsByTagName('textarea')[0].value;
-    let palabraDecodificada = decodeURIComponent(palabra);
-    document.getElementById('resultado').innerHTML = palabraDecodificada;
-  }
+  //n document.write('<br>Params ' + word2.length  + ' elements: ');
+
+   for(let decodeWord=0; decodeWord < word2.length; decodeWord++) {
+     document.write(' Data ' + decodeWord + ' is: ' + word2[decodeWord] + '<br>' );
+     console.log(decodeWord);
+     
+   }
+
+
+  // document.write(word2 + '<br>');
+
+     //document.getElementById('result').innerHTML = word2;
+      
+  
+  // document.getElementById('result').innerHTML = word2;
+}
   
