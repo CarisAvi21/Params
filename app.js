@@ -10,7 +10,7 @@ function desencriptar(e){
   //n document.write('<br>Params ' + word2.length  + ' elements: ');
 
    for(let decodeWord = 0; decodeWord < word2.length; decodeWord ++) {
-    document.write('Data ' + decodeWord + ' is: ' + word2[decodeWord] + '<br>');
+    document.write(decodeWord + ':  ' + word2[decodeWord] + '<br>');
      //console.log(decode);
      
      
