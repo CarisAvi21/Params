@@ -10,13 +10,15 @@ function desencriptar(e){
   //n document.write('<br>Params ' + word2.length  + ' elements: ');
 
    for(let decodeWord = 0; decodeWord < word2.length; decodeWord ++) {
-    //document.write(decodeWord + ':  ' + word2[decodeWord] + '<br>');
+    document.write(decodeWord + ':  ' + word2[decodeWord] + '<br>');
      //console.log(decode);
      
      
    // document.getElementById('result').innerHTML = decode;
    // console.log(document.getElementById('result').innerHTML = decode);
-   window.location.href="http://www.google.com";
+   
+   //Código prueba SAS
+   // window.location.href="http://www.google.com";
    
    }
 
